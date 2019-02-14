@@ -11,7 +11,6 @@ RUN cd /home/gitpod \
   && git clone https://github.com/op07n/qt3.git  \
   && cd qt3  \
   && yes yes | ./configure -thread -fast -nomake examples -nomake demos \
-  && ./configure  \
   && make
 
 
