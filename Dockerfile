@@ -10,7 +10,7 @@ RUN apt-get update \
 RUN cd /home/gitpod \
   && git clone https://github.com/op07n/qt3.git  \
   && cd qt3  \
-  && yes | ./configure -thread -fast -nomake examples -nomake demos \
+  && yes yes | ./configure -thread -fast -nomake examples -nomake demos \
   && ./configure  \
   && make
 
